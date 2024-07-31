@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFilters.App", "CustomFilters.App\CustomFilters.App.csproj", "{6DD12BDD-13E9-4E48-A5F0-31866F5F6202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFilters.Tests", "CustomFilters.Tests\CustomFilters.Tests.csproj", "{99821DBF-2EA3-4E37-8835-6CCA6C1928ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DD12BDD-13E9-4E48-A5F0-31866F5F6202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD12BDD-13E9-4E48-A5F0-31866F5F6202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD12BDD-13E9-4E48-A5F0-31866F5F6202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD12BDD-13E9-4E48-A5F0-31866F5F6202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99821DBF-2EA3-4E37-8835-6CCA6C1928ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99821DBF-2EA3-4E37-8835-6CCA6C1928ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99821DBF-2EA3-4E37-8835-6CCA6C1928ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99821DBF-2EA3-4E37-8835-6CCA6C1928ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4DDDCAD-6DB3-42C3-8EAB-EA72E6B2F30A}
+	EndGlobalSection
+EndGlobal
