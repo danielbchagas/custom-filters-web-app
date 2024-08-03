@@ -14,6 +14,8 @@ namespace CustomFilters.App.Filters
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             var request = filterContext.HttpContext.Request;
+            var response = filterContext.HttpContext.Response;
+            
             var key = request.UserHostAddress + "-" + request.Url.AbsolutePath;
 
             lock (LastRequestTimes)
@@ -24,6 +26,18 @@ namespace CustomFilters.App.Filters
                     if (currentTime - lastRequestTime < ThrottleDuration)
                     {
                         filterContext.Result = new HttpStatusCodeResult(TooManyRequestsStatusCode, TooManyRequestsStatusMessage);
+                        
+                        response.Write($@"
+                            <script>
+                                let confirmed = confirm('Error: {TooManyRequestsStatusMessage}');
+                                if (confirmed) {{
+                                    window.location = '/';
+                                }}
+                                else {{
+                                    window.location = '/home/error';
+                                }}
+                            </script>");
+                        
                         return;
                     }
                 }

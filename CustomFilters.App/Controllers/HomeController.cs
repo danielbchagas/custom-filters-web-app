@@ -29,5 +29,10 @@ namespace CustomFilters.App.Controllers
 
             return View();
         }
+        
+        public ActionResult Error()
+        {
+            return View();
+        }
     }
 }
